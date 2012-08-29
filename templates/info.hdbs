@@ -1,0 +1,96 @@
+<section>
+<div class="aweber_app">
+  {{#if anysubs}}
+    <div class="aweber_currently_subscribed">
+  {{/if}}
+
+  {{#if subscribed}}
+    <span class="aweber_header">Currently subscribed to:</span>
+  {{/if}}
+
+  {{#subscribed}}
+    <div class="aweber_section" id="aweber_list_{{listID}}">
+    {{listName}}
+    </div>
+  {{/subscribed}}
+
+  {{#unconfirmed}}
+    <div class="aweber_section aweber_unconfirmed" id="aweber_list_{{listID}}">
+      {{listName}}
+    </div>
+  {{/unconfirmed}}
+  </div>
+
+  {{#if unsubscribed}}
+  <div class="aweber_unsubscribed">
+    <span class="aweber_header">Unsubscribed from:</span>
+  {{/if}}
+
+  {{#unsubscribed}}
+    <div class="aweber_section" id="aweber_list_{{listID}}">
+      {{listName}}
+    </div>
+  {{/unsubscribed}}
+</div>
+</div>
+
+  {{#subscribed}}
+    <div class="aweber_submenu" id="aweber_submenu_{{listID}}">
+    <div class="aweber_list_title">
+      List: <em>{{listName}}</em>
+    </div>
+    <div class="aweber_subscriber_since">
+      Subscriber Since: <span>{{subscriber.subscribed_at}}</span>
+      <br />Ad Tracking: <span>{{subscriber.ad_tracking}}</span>
+        </div>
+        {{#if lastFollowup}}
+          <div class="aweber_message">
+                Last Message Received:
+                <span class="aweber_subject">Message #{{subscriber.last_followup_message_number_sent}}
+                    {{#lastFollowup}}
+                    {{subject}}</span>
+                    {{/lastFollowup}}
+                <span class="aweber_sent">Sent {{subscriber.last_followup_sent_at}}</span>
+            </div>
+       {{/if}}
+       {{#eachkeys subscriber.custom_fields}}
+         {{this.key}}:
+           <span>{{this.value}}</span>
+       {{/eachkeys}}
+        <label class="aweber_back_to_lists">Back to list overview</label>
+    </div>
+  {{/subscribed}}
+</section>
+
+  {{#unconfirmed}}
+    <div class="aweber_submenu" id="aweber_submenu_{{listID}}">
+      <div class="aweber_list_title">
+        List: <em>{{listName}}</em>
+      </div>
+      <div class="aweber_subscriber_since">
+        Subscriber Since: <span>{{subscriber.subscribed_at}}</span>
+        <br />Ad Tracking: <span>{{subscriber.ad_tracking}}</span>
+      </div>
+      <label class="aweber_back_to_lists">Back to list overview</label>
+    </div>
+  {{/unconfirmed}}
+
+  {{#unsubscribed}}
+    <div class="aweber_submenu" id="aweber_submenu_{{listID}}">
+    <div class="aweber_list_title">
+      Liste <em>{{listName}}</em>
+    </div>
+    <div class="aweber_subscriber_since">
+      Unsubscribed on: <span>{{subscriber.unsubscribed_at}}</span>
+    </div>
+    {{#if lastFollowup}}
+      <div class="aweber_message">
+        Last Message Recieved:
+        <span class="aweber_subject">Message #{{lastFollowup.message_number}}
+                            #{{lastFollowup.subject}}
+        <span class="aweber_sent">Sent {{subscriber.last_followup_sent_at}}</span>
+      </div>
+    {{/if}}
+    <label class="aweber_back_to_lists">Back to list overview</label>
+    {{/unsubscribed}}
+    </div>

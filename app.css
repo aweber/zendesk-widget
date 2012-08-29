@@ -1,0 +1,83 @@
+.aweber-account .logo {
+    background: transparent app-asset-url("logo.png") no-repeat;
+    background-size: 25px 25px;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+.aweber-account h1 { font-size: 160%; }
+.aweber-account p { font-size: 120%; }
+
+.aweber_header {
+    display:block;
+    padding-bottom:3px;
+    }
+.aweber_section {
+    border-top:1px dotted #d8d9d8;
+    border-collapse:collapse;
+    color:#666;
+    padding:5px 7px;
+    }
+.aweber_section:hover + .section {
+    border-top:1px solid #666;
+    }
+.aweber_section:hover {
+    background:#666 url(https://www.aweber.com/images/api-integrations/view.png) 162px 5px no-repeat;
+    border-collapse:collapse;
+    color:#FFF;
+    border-top:1px dotted #666;
+    }
+.aweber_section:last-child {
+    border-bottom:1px dotted #d8d9d8;
+    }
+.aweber_section:last-child:hover {
+    border-bottom:1px solid #666;
+    }
+.aweber_unconfirmed {
+        background:url(https://www.aweber.com/images/api-integrations/unconfirmed.png) 135px 10px no-repeat;
+    }
+.aweber_currently_subscribed,
+.aweber_unsubscribed {
+    margin-top:15px;}
+.aweber_list_title,
+.aweber_subscriber_since,
+.aweber_message,
+.aweber_custom {
+    border-bottom:1px dotted #d8d9d8;
+    padding:5px 7px;
+    }
+.aweber_subscriber_since span {
+    color:#666;
+    }
+.aweber_list_title em {
+    color:#2680cf;
+    }
+.aweber_subject {
+    display:block;
+    color:#666;
+    }
+.aweber_sent {
+    color:#5fafce;
+    font-style:italic;
+    font-size:11px;
+    }
+.aweber_custom span {
+    color:#666;
+    display:block;
+    }
+.aweber_back_to_lists {
+    background:url(https://www.aweber.com/images/api-integrations/backtolists.jpg) no-repeat;
+    display:block;
+    margin:10px auto;
+    width:132px;
+    height:15px;
+    text-indent: -9999px;
+    }
+.aweber_back_to_lists:hover {
+    background-position:bottom;
+    }
+.aweber_no_match {
+    border-top:1px dotted #e4e4e4;
+    margin:5px 0px 0px;
+    padding:5px 0px;
+    }

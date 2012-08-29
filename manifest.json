@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "AWeber Communications",
+    "email": "api@aweber.com"
+  },
+
+  "parameters": [
+        {
+        "name": "app_key",
+        "type": "text",
+        "required": true
+        }
+    ],
+
+  "location": "ticket_sidebar",
+  "defaultLocale": "en",
+  "private": false,
+  "singleInstall": true,
+  "frameworkVersion": "0.5"
+}
