@@ -1,6 +1,6 @@
 About
 =====
-This is an app that shows subscriber data about the Ticket requestor in the sidebar of Zendesk. Please note that you'll need an active <a href="https://www.aweber.com">AWeber account</a> to use this app.
+This is an app that shows subscriber data about the Ticket requester in the sidebar of Zendesk. Please note that you'll need an active <a href="https://www.aweber.com">AWeber account</a> to use this app.
 If you are a current AWeber customer who wants to install this plugin, please <a href="https://help.aweber.com/entries/21911321-How-Do-I-Integrate-Zendesk-with-AWeber-">visit our Knoweldge Base for more information</a>, and remember, we're always <a href="https://www.aweber.com/contact-us.htm">here to help!</a>
 
 Development
