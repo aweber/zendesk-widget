@@ -1,5 +1,5 @@
 PACKAGER = zip
-PROJECT_NAME = zendesk-lotus-widget
+PROJECT_NAME = zendesk-widget
 SOURCES = app.css app.js assets manifest.json templates translations
 SWITCHES = -r
 
