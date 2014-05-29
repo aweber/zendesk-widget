@@ -53,10 +53,10 @@
                 <span class="aweber_sent">Sent {{subscriber.last_followup_sent_at}}</span>
             </div>
        {{/if}}
-       {{#eachkeys subscriber.custom_fields}}
-         {{this.key}}:
-           <span>{{this.value}}</span>
-       {{/eachkeys}}
+       {{#each subscriber.custom_fields}}
+         {{@key}}:
+           <span>{{this}}</span>
+       {{/each}}
         <label class="aweber_back_to_lists">Back to list overview</label>
     </div>
   {{/subscribed}}
@@ -78,7 +78,7 @@
   {{#unsubscribed}}
     <div class="aweber_submenu" id="aweber_submenu_{{listID}}">
     <div class="aweber_list_title">
-      Liste <em>{{listName}}</em>
+      List: <em>{{listName}}</em>
     </div>
     <div class="aweber_subscriber_since">
       Unsubscribed on: <span>{{subscriber.unsubscribed_at}}</span>
