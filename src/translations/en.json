@@ -1,6 +1,11 @@
 {
-"app": {
-  "description": "Show subscriber data for ticket requesters",
-  "name": "AWeber"
+  "app": {
+    "description": "Show subscriber data for ticket requesters",
+    "name": "AWeber",
+    "parameters": {
+      "app_key": {
+        "label": "Code provided by AWeber in the My Apps page for Zendesk"
+      }
+    }
   }
 }
