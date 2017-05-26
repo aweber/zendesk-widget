@@ -1,0 +1,24 @@
+{
+  "name": "AWeber",
+  "author": {
+    "name": "AWeber Communications",
+    "email": "api@aweber.com",
+    "url": "https://www.aweber.com"
+  },
+  "defaultLocale": "en",
+  "private": false,
+  "domainWhitelist": ["webhooks.aweber.com", "www.aweber.com"],
+  "location": {
+    "support": {
+      "ticket_sidebar": "assets/index.html"
+    }
+  },
+  "parameters": [{
+    "name": "app_key",
+    "type": "text",
+    "required": true,
+    "secure": false
+  }],
+  "version": "2.0",
+  "frameworkVersion": "2.0"
+}
