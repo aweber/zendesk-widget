@@ -1,24 +1,22 @@
 {
-  "name": "app_scaffold",
-  "version": "0.0.1",
-  "description": "A scaffold for developers to build ZAF v2 apps",
+  "name": "AWeber",
+  "version": "2.0.0",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zendesk/app_scaffold.git"
+    "url": "https://github.com/aweber/zendesk-widget"
   },
   "scripts": {
     "build": "webpack -p",
     "watch": "webpack --watch"
   },
-  "license": "Apache-2.0",
-  "author": "Zendesk",
+  "license": "3-clause BSD, Apache-2.0",
+  "author": "AWeber Communications",
   "keywords": [
-    "zendesk",
-    "app",
-    "framework"
+    "aweber"
   ],
   "bugs": {
-    "url": "https://github.com/zendesk/app_scaffold/issues"
+    "url": "https://github.com/aweber/zendesk-widget/issues"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
